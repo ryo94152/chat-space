@@ -40,8 +40,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|name|references|null: false,index: true|
-|email|references|null: false|
+|name|integer|null: false,index: true|
+|email|integer|null: false|
 
 ### Association
 - has_many :groups_users
