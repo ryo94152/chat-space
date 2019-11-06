@@ -52,7 +52,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|name|references|null: false,unique:true|
+|name|integer|null: false,unique:true|
 
 ### Association
 - has_many :groups_users
