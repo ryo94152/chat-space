@@ -1,0 +1,33 @@
+.chat-main
+  .main-header
+    .main-header__leftbox
+      .main-header__leftbox__current-group
+        グループネーム
+      .main-header__leftbox__member-list
+        メンバー
+    .main-header__edit-btn
+      Edit
+  .messages
+    .message
+      .message__upper-info
+        .message__upper-info__talker
+          木原さん
+        .message__upper-info__date 
+          2019/11/08 17:05
+      .message__text
+        明日の天気はどうですか？
+      .message__upper-info
+        .message__upper-info__talker
+          そらジロー
+        .message__upper-info__date 
+          2019/11/08 17:10
+      .message__text
+        明日の天気は晴れです！
+  .form
+    .new-message
+      .input-box
+        %input.input-box__text{:placeholder => "type a message", :type => "text"}
+        %label.input-box__image
+          %i.fa.fa-image
+          %input.message-image{:type => "file"}
+        %input.submit-btn{:type => "submit", :value => "Send"}
