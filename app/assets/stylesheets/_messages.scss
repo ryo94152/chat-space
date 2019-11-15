@@ -45,9 +45,11 @@
   color: #ffffff;
   .group{
     font-size: 15px;
+    color: #ffffff;
     &__message{
       font-size: 11px;
       padding-bottom: 40px;
+      color: #ffffff;
     }
   }
 }
@@ -85,7 +87,7 @@ width: calc(100vw - 300px);
 }
 
 .messages{
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .message{
@@ -109,37 +111,6 @@ width: calc(100vw - 300px);
   }
 }
 
-.form{
-  position: fixed;
-  bottom: 0;
-  box-sizing: border-box;
-  background-color: #ddd;
-  width: 100%;
-  height: 90px;
-  padding: 20px 40px;
-  .new-message{
-    width: 100%;
-    box-sizing: border-box;
-    .input-box{
-      width: 100%;
-      &__text{
-        height: 50px;
-        padding: 0 40px 0 10px;
-        width: 850px;
-        position: relative;
-      }
-    }
-    .submit-btn{
-      width: 100px;
-      background-color: #38aef0;
-      color: white;
-      height: 50px;
-      margin-left: 15px;
-      padding: 0 30px;
-    }
-  }
-}
-
 .message-image{
   display: none;
 }
@@ -151,3 +122,36 @@ width: calc(100vw - 300px);
   top: 35px;
   left: 900px;
 }
+.form{
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  background-color: #ddd;
+  width: 100%;
+  height: 90px;
+  padding: 20px 40px;
+  .form__message{
+    height: 50px;
+    padding: 0 40px 0 10px;
+    width: 850px;
+    position: relative;
+    border: none;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+.form__submit{
+  width: 100px;
+  background-color: #38aef0;
+  color: white;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 30px;
+  position: absolute;
+  top:20px;
+  left: 950px;
+  border: none;
+} 
