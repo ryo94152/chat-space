@@ -42,10 +42,11 @@
   height: calc(100vh - 100px);
   width: 300px;
   font-weight: bold;
-  color: #ffffff;
+  a{
+color: white;
+  }
   .group{
     font-size: 15px;
-    color: #ffffff;
     &__message{
       font-size: 11px;
       padding-bottom: 40px;
@@ -87,7 +88,9 @@ width: calc(100vw - 300px);
 }
 
 .messages{
-  padding: 0 20px;
+  padding: 0 40px ;
+  overflow:scroll;
+  height: calc(100vh - 100px - 90px);
 }
 
 .message{
@@ -120,20 +123,20 @@ width: calc(100vw - 300px);
   color: black;
   position: absolute;
   top: 35px;
-  left: 900px;
+  right: calc(100vh - 550px);
 }
 .form{
   position: fixed;
   bottom: 0;
   box-sizing: border-box;
   background-color: #ddd;
-  width: 100%;
+  width: calc(100vw - 300px);
   height: 90px;
   padding: 20px 40px;
   .form__message{
     height: 50px;
     padding: 0 40px 0 10px;
-    width: 850px;
+    width: calc(100% - 200px);
     position: relative;
     border: none;
   }
@@ -152,6 +155,10 @@ width: calc(100vw - 300px);
   padding: 0 30px;
   position: absolute;
   top:20px;
-  left: 950px;
+  right: 60px;
   border: none;
 } 
+
+.upper-message{
+  font-size: 30px;
+}

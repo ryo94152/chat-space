@@ -2,10 +2,13 @@
   .main-header
     .main-header__leftbox
       .main-header__leftbox__current-group
-        グループ
+        -# グループネーム
+        = @group.name
       .main-header__leftbox__member-list
-        メンバー
+        -# チャットメンバー
+        = current_user.name
     .main-header__edit-btn
+      -# グループ編集
       = link_to "edit",new_group_path
   .messages
     = render @messages
