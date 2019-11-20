@@ -6,10 +6,9 @@
         = @group.name
       .main-header__leftbox__member-list
         -# チャットメンバー
-        = current_user.name
+        = @group.users.name
     .main-header__edit-btn
-      -# グループ編集
-      = link_to "edit",new_group_path
+      = link_to "edit",edit_group_path(@group)
   .messages
     = render @messages
   .form
