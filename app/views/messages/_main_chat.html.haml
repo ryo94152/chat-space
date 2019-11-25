@@ -6,7 +6,9 @@
         = @group.name
       .main-header__leftbox__member-list
         -# チャットメンバー
-        = @group.users.name
+        -# = @group.users.name
+        - @group.users.each do |group_user|
+          = group_user.name
     .main-header__edit-btn
       = link_to "edit",edit_group_path(@group)
   .messages
